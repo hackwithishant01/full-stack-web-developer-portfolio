@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Full Stack Web Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo">Portfolio</a>
+        <div class="nav-menu" id="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div id="particles-js"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-name">
+            <span class="typing-text" id="name-text"></span>
+            <span class="cursor" id="name-cursor">|</span>
+          </h1>
+          <div class="typing-container">
+            <p class="hero-title">
+              <span id="job-title-text"></span>
+              <span class="cursor">|</span>
+            </p>
+          </div>
+          <p class="hero-description fade-in">
+            Passionate about creating innovative web solutions that combine
+            beautiful design with powerful functionality. I specialize in modern
+            web technologies and love bringing ideas to life through code.
+          </p>
+          <div class="hero-buttons fade-in">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow">
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-title">My Skills</h2>
+
+        <!-- Languages -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3 class="category-title">Languages</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-html5"></i>
+              </div>
+              <span class="skill-label">HTML5</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-css3-alt"></i>
+              </div>
+              <span class="skill-label">CSS3</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-js-square"></i>
+              </div>
+              <span class="skill-label">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Frameworks & Libraries -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3 class="category-title">Frameworks & Libraries</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-react"></i>
+              </div>
+              <span class="skill-label">React.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-node-js"></i>
+              </div>
+              <span class="skill-label">Node.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <span class="skill-label">Express.js</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-wind"></i>
+              </div>
+              <span class="skill-label">Tailwind CSS</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-bootstrap"></i>
+              </div>
+              <span class="skill-label">Bootstrap 5</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Tools -->
+        <div class="skill-category" data-aos="fade-up">
+          <h3 class="category-title">Other Tools</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-git-alt"></i>
+              </div>
+              <span class="skill-label">Git</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fab fa-github"></i>
+              </div>
+              <span class="skill-label">GitHub</span>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <span class="skill-label">VS Code</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">My Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card" data-aos="slide-up" data-index="0">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce Platform</h3>
+              <p class="project-description">
+                Full-stack e-commerce solution built with React and Node.js,
+                featuring user authentication, payment integration, and admin
+                dashboard.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-project">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-project btn-live">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="slide-up" data-index="1">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Task Management App</h3>
+              <p class="project-description">
+                Responsive task management application with drag-and-drop
+                functionality, real-time updates, and team collaboration
+                features.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">LocalStorage</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-project">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-project btn-live">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="slide-up" data-index="2">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-chart-line"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Analytics Dashboard</h3>
+              <p class="project-description">
+                Interactive analytics dashboard with data visualization,
+                real-time charts, and comprehensive reporting system for
+                business insights.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Express</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-project">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-project btn-live">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-aos="slide-up" data-index="3">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-blog"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Personal Blog Platform</h3>
+              <p class="project-description">
+                Modern blog platform with markdown support, commenting system,
+                and content management features for writers and content
+                creators.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+              </div>
+              <div class="project-buttons">
+                <a href="#" class="btn btn-project">
+                  <i class="fab fa-github"></i>
+                  GitHub
+                </a>
+                <a href="#" class="btn btn-project btn-live">
+                  <i class="fas fa-external-link-alt"></i>
+                  Live Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's Work Together</h3>
+            <p>
+              I'm always interested in new opportunities and exciting projects.
+              Whether you have a project in mind or just want to connect, I'd
+              love to hear from you!
+            </p>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a
+                href="https://linkedin.com"
+                target="_blank"
+                class="social-link"
+              >
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" data-aos="fade-left" id="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+              <span class="error-message" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+              <span class="error-message" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-loading" style="display: none">
+                <i class="fas fa-spinner fa-spin"></i>
+              </span>
+            </button>
+
+            <div class="form-status" id="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Portfolio. Built with ❤️ using HTML, CSS & JavaScript</p>
+      </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
